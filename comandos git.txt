@@ -1,3 +1,4 @@
+Como salvar algo no repositório do git hub
 1. Abrir cmd na pasta do repositório
 2. git add .
 3. git commit -m "..."
