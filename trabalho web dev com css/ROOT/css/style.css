@@ -1,0 +1,40 @@
+html {
+background-image: url(/imagens/inferno.verde.jpg);
+
+background-size: cover;
+background-position: center center;       
+}
+h1{
+background-color: rgba(0, 0, 0, 0.727);
+color:white;
+text-align: center;}
+h2{
+background-color: rgba(0, 0, 0, 0.727);
+color: white;
+text-align: center}
+h3{
+background-color: rgba(0, 0, 0, 0.727);
+color: white;
+text-align: center}
+h4{
+background-color: rgba(0, 0, 0, 0.727);
+color: white;
+text-align: center}
+figure{
+background-color: rgba(0, 0, 0, 0.727);
+color: white;
+text-align: center}
+li{
+background-color: rgba(0, 0, 0, 0.727);
+color: white;
+text-align: center}
+
+
+#midia{
+display: flex;
+justify-content: center;
+}
+#videolegalmusiquinhatriste{
+display: flex;
+justify-content: center;
+}
