@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containercima, .containerbaixo {
+    display: flex;
+    width: 80%;
+    user-select: none;
+}
+
+.left, .right {
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Remove cursor style from the containers */
+.left h2, .right h2 {
+    text-align: center;
+}
+
+/* Styles for draggable paragraphs */
+.draggable {
+    background-color: #c5c4c4; /* Dark background */
+    color: #000000; /* White text for contrast */
+    padding: 10px; /* Padding for better spacing */
+    border-radius: 8px; /* Rounded borders */
+    margin: 5px 0; /* Margin to space out paragraphs */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    cursor: grab; /* Hand cursor */
+}
+
+.draggable:active {
+    cursor: grabbing; /* Change cursor on drag */
+    opacity: 0.7; /* Slightly transparent while dragging */
+}

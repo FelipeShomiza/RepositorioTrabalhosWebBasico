@@ -1,82 +1,92 @@
+/* Estilo geral do corpo da página */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Arial', sans-serif;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    display: flex; /* Usa flexbox para layout, permitindo centralização fácil */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    flex-direction: column; /* Alinha os itens na vertical */
+    font-family: 'Arial', sans-serif; /* Define a fonte da página */
+    height: 100vh; /* Faz o corpo ocupar a altura total da janela */
+    margin: 0; /* Remove margens padrão do navegador */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* Aplica um gradiente suave de fundo */
 }
 
+/* Contêiner principal que contém as seções esquerda e direita */
 .container {
-    display: flex;
-    align-items: flex-start;
-    width: 80%;
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex; /* Usa flexbox para dispor as áreas lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    width: 80%; /* Define a largura do contêiner */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao contêiner */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda o contêiner */
 }
 
+/* Estilo para a área esquerda (parágrafos) */
 .left, .right {
-    width: 45%;
-    height: 300px; /* Altura fixa para as áreas */
-    padding: 20px;
-    margin: 10px;
-    background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    width: 45%; /* Largura de cada área, com espaço entre elas */
+    height: 300px; /* Altura fixa para garantir uniformidade */
+    padding: 20px; /* Espaçamento interno para conteúdo */
+    margin: 10px; /* Margem externa para separar as áreas */
+    background: #ffffff; /* Cor de fundo branca para destaque do conteúdo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo exceder a altura */
 }
 
+/* Estilo dos títulos das seções (esquerda e direita) */
 .left h2, .right h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 15px;
+    color: #333; /* Cor do texto dos títulos */
+    text-align: center; /* Centraliza o texto dos títulos */
+    margin-bottom: 15px; /* Espaço abaixo do título */
 }
 
+/* Estilo para a seção de controles (entrada e botões) */
 .controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    background: #f7f9fc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usa flexbox para dispor os controles em coluna */
+    flex-direction: column; /* Alinha os controles verticalmente */
+    align-items: center; /* Centraliza os itens dentro da seção */
+    margin: 20px; /* Margem externa para separar dos outros elementos */
+    background: #f7f9fc; /* Cor de fundo suave para os controles */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo para campos de entrada do tipo numérico */
 input[type="number"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 16px;
-    transition: border-color 0.3s;
+    padding: 10px; /* Espaçamento interno para conforto do usuário */
+    margin-bottom: 15px; /* Espaço abaixo do campo de entrada */
+    border: 1px solid #007bff; /* Borda azul para destaque */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%; /* Largura total do campo */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
 }
 
+/* Estilo para o campo de entrada quando em foco */
 input[type="number"]:focus {
-    border-color: #0056b3;
-    outline: none;
+    border-color: #0056b3; /* Muda a cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
 }
 
+/* Estilo para botões (Gerar e Copiar) */
 button {
-    margin: 5px 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #007bff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px 0; /* Margem acima e abaixo do botão */
+    padding: 10px 20px; /* Espaçamento interno para tamanho adequado */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    background-color: #007bff; /* Cor de fundo azul */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para efeitos de interação */
 }
 
+/* Efeito ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: #0056b3; /* Muda a cor do fundo ao passar o mouse */
+    transform: translateY(-2px); /* Move o botão levemente para cima */
 }
 
+/* Efeito ao clicar no botão */
 button:active {
-    transform: translateY(0);
+    transform: translateY(0); /* Retorna à posição original ao clicar */
 }

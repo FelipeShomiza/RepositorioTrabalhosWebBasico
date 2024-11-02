@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Desenvolvimento Web</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <h1>Matriz de Elsenhower</h1>
+
+    <div class="containercima">
+        <div class="left" id="topleft">
+            <h2>Importante e Urgente</h2>
+        </div>
+        <div class="right" id="topright">
+            <h2>Importante, mas não Urgente</h2>
+        </div>
+    </div>
+    <div class="containerbaixo">
+        <div class="left" id="botleft">
+            <h2>Não Importante, mas Urgente</h2>
+        </div>
+        <div class="right" id="botright">
+            <h2>Não Importante e Não Urgente</h2>
+        </div>
+    </div>
+    <div class="footer">
+        <input type="text" id="inputAtividade" placeholder="Adicionar nova atividade">
+        <select id="selectTipo">
+            <option value="">Escolha uma opção</option>
+            <option value="Importante e Urgente">Importante e Urgente</option>
+            <option value="Importante, mas não Urgente">Importante, mas não Urgente</option>
+            <option value="Não Importante, mas Urgente">Não Importante, mas Urgente</option>
+            <option value="Não Importante e Não Urgente">Não Importante e Não Urgente</option>
+        </select>
+        <button id="btnAdicionar">Adicionar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
